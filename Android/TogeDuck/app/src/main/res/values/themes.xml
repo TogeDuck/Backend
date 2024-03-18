@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TogeDuck" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:textColorHighlight">@color/bts_main_100</item>
+        <item name="colorAccent">@color/bts_main_200</item>
+        <item name="colorControlActivated">@color/bts_main_200</item>
+
+        <!--    상태바 투명하게 하는 설정    -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <!--bottom_sheet 스타일 설정 -->
+    <style name="BottomSheetRoundedTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/RoundCornerBottomSheetStyle</item>
+    </style>
+    <style name="RoundCornerBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@drawable/rounded</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
